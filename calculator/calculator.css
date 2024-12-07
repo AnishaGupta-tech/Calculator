@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    background-color: #2f3b52;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    border: 5px solid white; 
+    border-radius: 10px;
+    width: 320px;
+    background-color: #1c2530;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Display Styles */
+#display {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Button Container Styles */
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: stretch;
+}
+
+/* Button Styles */
+.btn {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3c9fd7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #2b8bc8;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Special button styles */
+.btn:focus {
+    outline: none;
+}
